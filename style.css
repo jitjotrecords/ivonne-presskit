@@ -4,9 +4,6 @@
   --fg:#f5f5f5; 
   --muted:#b9b9b9; 
   --accent:#ff6a00;
-  --paper: radial-gradient(200% 150% at 10% 0%, rgba(255,255,255,0.06), transparent 60%), 
-           radial-gradient(160% 120% at 90% 20%, rgba(255,255,255,0.04), transparent 70%),
-           linear-gradient(0deg, rgba(255,255,255,0.03), rgba(255,255,255,0.03));
 }
 
 /* ===== Albertus Medium para header ===== */
@@ -38,7 +35,7 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 1080px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -52,7 +49,7 @@ main {
   align-items: center;
 }
 
-/* Título más grande con glow */
+/* Título más grande sin glow */
 .brand-title {
   font-family: 'Albertus Medium', system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
   margin: 0;
@@ -60,14 +57,12 @@ main {
   letter-spacing: .5px;
   text-transform: uppercase;
   color: #fff;
-
 }
 .brand-subtitle {
   font-family: 'Albertus Medium', system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
   margin: 6px 0 16px;
   color: var(--muted);
   font-size: clamp(16px, 2.2vw, 18px);
-  text-shadow: 0 0 3px rgba(255,106,0,0.4);
 }
 
 /* Botones de idioma más abajo */
@@ -92,7 +87,7 @@ main {
   color: #fff;
 }
 
-/* ===== Hero con fondo semi-transparente y glow ===== */
+/* ===== Hero simple ===== */
 .hero {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -100,17 +95,11 @@ main {
   padding: 28px 20px;
   background: rgba(11,11,11,0.85);
   border-radius: 16px;
-  box-shadow: 0 8px 30px rgba(255,106,0,0.3);
-  transition: box-shadow 0.3s ease;
-}
-.hero:hover {
-  box-shadow: 0 8px 40px rgba(255,106,0,0.5);
 }
 .hero-cover {
   width: 100%;
   height: auto;
   border-radius: 16px;
-  box-shadow: 0 8px 30px rgba(0,0,0,.5);
   object-fit: cover;
   background: #000;
 }
@@ -128,7 +117,6 @@ main {
   border: 1px solid #222;
   border-radius: 16px;
   padding: 14px;
-  box-shadow: 0 8px 20px rgba(0,0,0,.35);
 }
 .now-playing {
   display: flex;
@@ -170,16 +158,10 @@ main {
   background: #131313;
   border-left: 3px solid var(--accent);
   padding-left: 3px;
-  animation: pulse 2s infinite alternate;
 }
 .track-num {opacity: .8; font-variant-numeric: tabular-nums}
 .track-title {white-space: nowrap; overflow: hidden; text-overflow: ellipsis}
 .duration {opacity: .65; font-variant-numeric: tabular-nums}
-
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 rgba(255,106,0,0); }
-  100% { box-shadow: 0 0 8px rgba(255,106,0,0.4); }
-}
 
 /* ===== Botón descargar ===== */
 .download-cta {margin-top:10px}
@@ -195,12 +177,14 @@ main {
 }
 .btn:hover {filter: brightness(1.1);}
 
-/* ===== Secciones con fondo semi-transparente ===== */
+/* ===== Secciones del mismo ancho ===== */
 .content {
+  width: 100%;
+  max-width: 800px; /* mismo ancho */
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 12px;
   padding: 20px;
-  margin: 20px 0;
+  margin: 20px auto; /* centrado */
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 .content h3 {margin-top: 0}
