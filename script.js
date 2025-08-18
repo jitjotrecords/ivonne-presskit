@@ -22,14 +22,14 @@ setLang(localStorage.getItem('tivco_lang') || 'es');
 
 const tracks = [
   { title: 'Two Percherones',                    src: ['audio/01-two-percherones.mp3'] },
-  { title: 'Where the Trail Falters',            src: ['audio/02-where-the-trail-falters.mp3','audio/02-where-the-trail-falters.wav'] },
-  { title: 'Jit Jot (Notes from a Moving Saloon)', src: ['audio/03-jit-jot.mp3','audio/03-jit-jot.wav'] },
-  { title: 'Two Percherones looking for the tune', src: ['audio/04-two-percherones-looking-for-the-tune.mp3','audio/04-two-percherones-looking-for-the-tune.wav'] },
-  { title: 'Resembles, Reprise (In Slow Dust)',  src: ['audio/05-resembles-reprise.mp3','audio/05-resembles-reprise.wav'] },
-  { title: 'A cavalcade, bellowing like thunder', src: ['audio/06-a-cavalcade-bellowing-like-thunder.mp3','audio/06-a-cavalcade-bellowing-like-thunder.wav'] },
-  { title: 'Desert Slows, Reprise (After Sundown)', src: ['audio/07-desert-slows-reprise.mp3','audio/07-desert-slows-reprise.wav'] },
-  { title: 'Interludio',                          src: ['audio/08-interlude.mp3','audio/08-interlude.wav'] },
-  { title: 'Last Call in San José del Rincón',    src: ['audio/09-last-call-in-san-jose-del-rincon.mp3','audio/09-last-call-in-san-jose-del-rincon.wav'] },
+  { title: 'Where the Trail Falters',            src: ['audio/02-where-the-trail-falters.mp3'] },
+  { title: 'Jit Jot (Notes from a Moving Saloon)', src: ['audio/03-jit-jot.mp3'] },
+  { title: 'Two Percherones looking for the tune', src: ['audio/04-two-percherones-looking-for-the-tune.mp3'] },
+  { title: 'Resembles, Reprise (In Slow Dust)',  src: ['audio/05-resembles-reprise.mp3'] },
+  { title: 'A cavalcade, bellowing like thunder', src: ['audio/06-a-cavalcade-bellowing-like-thunder.mp3'] },
+  { title: 'Desert Slows, Reprise (After Sundown)', src: ['audio/07-desert-slows-reprise.mp3'] },
+  { title: 'Interludio',                          src: ['audio/08-interlude.mp3'] },
+  { title: 'Last Call in San José del Rincón',    src: ['audio/09-last-call-in-san-jose-del-rincon.mp3'] },
 ];
 
 const mainPlayer = document.getElementById('mainPlayer');
