@@ -89,28 +89,15 @@ main {
   color: #fff;
 }
 
-/* ===== Hero ===== */
+/* ===== Hero con fondo semi-transparente ===== */
 .hero {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 24px;
   padding: 28px 20px;
-  background: var(--paper);
-}
-.hero-cover {
-  width: 100%;
-  height: auto;
-  border-radius: 16px;
-  box-shadow: 0 8px 30px rgba(0,0,0,.5);
-  object-fit: cover;
-  background: #000;
-}
-.hero-copy h2 {
-  margin: 0 0 6px;
-}
-.hero-copy p {
-  margin: 0 0 16px;
-  color: var(--muted);
+  background: rgba(11,11,11,0.85); /* fondo negro semi-transparente */
+  border-radius: 16px; /* suaviza los bordes */
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
 }
 
 /* ===== Player ===== */
