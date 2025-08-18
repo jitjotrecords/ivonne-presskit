@@ -21,7 +21,7 @@ setLang(localStorage.getItem('tivco_lang') || 'es');
 // 3) Todos los tracks se precargan al iniciar (preload 'auto').
 
 const tracks = [
-  { title: 'Two Percherones',                    src: ['audio/01-two-percherones.mp3','audio/01-two-percherones.wav'] },
+  { title: 'Two Percherones',                    src: ['audio/01-two-percherones.mp3'] },
   { title: 'Where the Trail Falters',            src: ['audio/02-where-the-trail-falters.mp3','audio/02-where-the-trail-falters.wav'] },
   { title: 'Jit Jot (Notes from a Moving Saloon)', src: ['audio/03-jit-jot.mp3','audio/03-jit-jot.wav'] },
   { title: 'Two Percherones looking for the tune', src: ['audio/04-two-percherones-looking-for-the-tune.mp3','audio/04-two-percherones-looking-for-the-tune.wav'] },
