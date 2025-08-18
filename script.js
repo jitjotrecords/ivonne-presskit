@@ -28,7 +28,7 @@ const tracks = [
   { title: 'Resembles, Reprise (In Slow Dust)',  src: ['audio/05-resembles-reprise.mp3','audio/05-resembles-reprise.wav'] },
   { title: 'A cavalcade, bellowing like thunder', src: ['audio/06-a-cavalcade-bellowing-like-thunder.mp3','audio/06-a-cavalcade-bellowing-like-thunder.wav'] },
   { title: 'Desert Slows, Reprise (After Sundown)', src: ['audio/07-desert-slows-reprise.mp3','audio/07-desert-slows-reprise.wav'] },
-  { title: 'Interludio',                          src: ['audio/08-interludio.mp3','audio/08-interludio.wav'] },
+  { title: 'Interludio',                          src: ['audio/08-interlude.mp3','audio/08-interlude.wav'] },
   { title: 'Last Call in San José del Rincón',    src: ['audio/09-last-call-in-san-jose-del-rincon.mp3','audio/09-last-call-in-san-jose-del-rincon.wav'] },
 ];
 
