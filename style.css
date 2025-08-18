@@ -34,14 +34,13 @@ body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
 }
 
-/* Contenedor principal */
 main {
+  max-width: 900px;   /* ancho máximo, ajustar según tu gusto */
+  margin: 0 auto;       /* centra horizontalmente */
+  padding: 0 16px;      /* espacio a los lados en móviles */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
+  gap: 24px;            /* separación entre secciones */
 }
 
 /* ===== Header ===== */
