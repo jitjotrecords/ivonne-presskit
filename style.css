@@ -60,9 +60,7 @@ main {
   letter-spacing: .5px;
   text-transform: uppercase;
   color: #fff;
-  text-shadow:
-    0 0 4px rgba(255,106,0,0.7),
-    0 0 8px rgba(255,106,0,0.5);
+
 }
 .brand-subtitle {
   font-family: 'Albertus Medium', system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
