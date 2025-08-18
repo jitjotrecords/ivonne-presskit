@@ -242,3 +242,9 @@ main {
   .brand-title {font-size:28px;}
   .brand-subtitle {font-size:14px;}
 }
+@media (max-width: 600px) {
+  .hero, .content, .site-footer {
+    padding-left: 10%;   /* margen izquierdo proporcional */
+    padding-right: 10%;  /* margen derecho proporcional */
+  }
+}
