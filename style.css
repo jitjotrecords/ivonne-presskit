@@ -117,13 +117,13 @@ main {
 /* ===== Responsividad ===== */
 @media (max-width: 920px) {
   .hero { gap: 16px; }
-  .hero-copy { max-width: 100%; }
-  .hero-cover { max-width: 100%; }
+  .hero-copy { max-width: 90%; }
+  .hero-cover { max-width: 90%; }
 }
 @media (max-width: 600px) {
   .hero { gap: 12px; padding: 16px 10px; }
-  .hero-copy { max-width: 100%; }
-  .hero-cover { max-width: 100%; }
+  .hero-copy { max-width: 90%; }
+  .hero-cover { max-width: 90%; }
 }
 
 
