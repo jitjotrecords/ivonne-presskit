@@ -219,6 +219,22 @@ a:hover {color: #00acec;}
 .media-box img {width: 100%; border-radius:12px; border:1px solid #222; background:#000}
 .hint {display:block; color:#777; margin-top:6px; text-align: justify;}
 
+/* Centrar subtítulo del header */
+.brand-subtitle {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Centrar contenido del footer */
+.site-footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* ===== Responsividad ===== */
 @media (max-width: 920px) {
   .hero {gap:16px;}
