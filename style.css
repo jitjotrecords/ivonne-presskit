@@ -9,8 +9,6 @@
            linear-gradient(0deg, rgba(255,255,255,0.03), rgba(255,255,255,0.03));
 }
 
-
-
 /* ===== Albertus Medium para header ===== */
 @font-face {
   font-family: 'Albertus Medium';
@@ -32,15 +30,16 @@ body {
   padding: 0;
   color: var(--fg);
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
+  text-align: justify; /* textos justificados */
 }
 
 main {
-  max-width: 900px;   /* ancho máximo, ajustar según tu gusto */
-  margin: 0 auto;       /* centra horizontalmente */
-  padding: 0 16px;      /* espacio a los lados en móviles */
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
   display: flex;
   flex-direction: column;
-  gap: 24px;            /* separación entre secciones */
+  gap: 24px;
 }
 
 /* ===== Header ===== */
@@ -94,7 +93,7 @@ main {
 /* ===== HERO solo player ===== */
 .hero {
   display: flex;
-  flex-direction: column; /* stack vertical */
+  flex-direction: column;
   align-items: center;
   gap: 24px;
   padding: 28px 20px;
@@ -110,22 +109,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: justify; /* textos justificados */
 }
-
-/* Quitamos .hero-cover, ya no se muestra */
-
-/* ===== Responsividad ===== */
-@media (max-width: 920px) {
-  .hero { gap: 16px; }
-  .hero-copy { max-width: 90%; }
-  .hero-cover { max-width: 90%; }
-}
-@media (max-width: 600px) {
-  .hero { gap: 12px; padding: 16px 10px; }
-  .hero-copy { max-width: 90%; }
-  .hero-cover { max-width: 90%; }
-}
-
 
 /* ===== Player ===== */
 .player-card {
@@ -194,35 +179,31 @@ main {
 .btn:hover {filter: brightness(1.1);}
 
 /* ===== Secciones del mismo ancho ===== */
-/* === Links destacados === */
 a {
-  color: #ffffff;      /* blanco */
-  font-weight: 700;    /* negrita */
+  color: #ffffff;
+  font-weight: 700;
   text-decoration: none;
 }
-
-a:hover {
-  color: #00acec;      /* opcional: color de acento al pasar el mouse */
-}
-
-/* === Fondos de secciones más opacos === */
+a:hover { color: #00acec; }
 .content {
   padding: 28px 20px;
   border-top: 1px solid #191919;
-  background: rgba(11, 11, 11, 0.85);  /* menos transparente que antes */
-  border-radius: 12px;                  /* opcional: bordes redondeados */
-  margin: 16px 0;    
-  width: 90%;                         /* opcional: separación entre secciones */
+  background: rgba(11,11,11,0.85);
+  border-radius: 12px;
+  margin: 16px 0;
+  width: 90%;
+  text-align: justify; /* textos justificados */
 }
 
 .content h3 {
   font-family: 'Albertus Medium', system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 12px; /* separación con el contenido */
-  font-size: clamp(20px, 3vw, 28px); /* tamaño responsive */
+  margin-bottom: 12px;
+  font-size: clamp(20px, 3vw, 28px);
   color: #fff;
 }
+
 .content .meta {list-style:none; padding:0; margin:10px 0 0; color: var(--muted)}
 .content .meta li {margin:4px 0}
 
@@ -241,10 +222,12 @@ a:hover {
   .content {padding:12px; margin:10px 8px;}
   .brand-title {font-size:28px;}
   .brand-subtitle {font-size:14px;}
-}
-@media (max-width: 600px) {
   .hero, .content, .site-footer {
-    padding-left: 10%;   /* margen izquierdo proporcional */
-    padding-right: 10%;  /* margen derecho proporcional */
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  /* Títulos centrados en móviles */
+  .content h3 {
+    text-align: center;
   }
 }
